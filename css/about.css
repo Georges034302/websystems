@@ -1,24 +1,15 @@
-#footer {
+#footer{
     position: fixed;
     text-align: left;
-    background-color: #474e5d;
-    color: white;
-    width: 97%;
+    background-color: slategrey;
     height: 100px;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     padding: 50px;
-  }
+    width: 97%;
+}
 
-  #image_div {
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    top: 20%;
-    left: 30%;
-  }
-
-  #credit{
+#credit{
     float: right;
     font-style: italic;
-  }
+}
