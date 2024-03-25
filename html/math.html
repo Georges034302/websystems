@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="/css/math.css">
+    <script src="/js/math.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+       $(function() {
+          $("#navbarHtml").load("/html/navbar.html");
+       });
+    </script>
+</head>
+<body>
+    <div id="navbarHtml"></div>
+    <div class="input_div">
+        <p>Js Expression Functions Demo
+            <input type="number" name="num" id="num">&nbsp;
+            <input type="button" class="button" onclick="calculate()" value="Calculate Factorial">
+        </p>
+    </div>
+    <div class="output_div" id="displayDiv"></div>
+</body>
+</html>
