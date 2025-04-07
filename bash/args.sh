@@ -1,18 +1,16 @@
 #!/bin/bash
 
-# Get the first 3 arguments
-# Show the arguments in reverse order
-# Show the list of arguments
-# Show the number of arguments
+# Check the number of arguments given to the script:
+# - if there are no arguments --> display "No Arguments"
+# - if there is one argument  --> display "The argurment is: <the arg>"
+# - otherwise --> display the argument list
 
-first=$1
-second=$2
-third=$3
-
-echo $third
-echo $second
-echo $first
-
-echo "List of arguments --> $*"
-echo "Number of arguments --> $#"
-echo "First argument --> $0"
+if [ $# -eq 0 ]
+then
+	echo "No Arguments"
+elif [ $# -eq 1 ]
+then
+	echo "The Argument is: $1"
+else
+	echo "$*"
+fi
