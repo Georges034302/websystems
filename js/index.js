@@ -1,19 +1,14 @@
-function startTime(){
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-
-    m = checkTime(m);
-    s = checkTime(s);
-
-    document.getElementById('clock').innerHTML = h+":"+m+":"+s;
-    var t = setTimeout(startTime,500);
+function startTime() {
+    const now = new Date();
+    const h = now.getHours();
+    const m = padTime(now.getMinutes());
+    const s = padTime(now.getSeconds());
+    document.getElementById('clock').innerHTML = h + ':' + m + ':' + s;
+    setTimeout(startTime, 500);
 }
 
-function checkTime(i){
-    if (i < 10) {
-        i = "0" + i
-    }
-    return i;
+function padTime(n) {
+    return n < 10 ? '0' + n : n;
 }
+
+document.addEventListener('DOMContentLoaded', startTime);

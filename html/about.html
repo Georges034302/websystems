@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-      $(function() {
-         $("#navbarHtml").load("/html/navbar.html");
-      });
-   </script>
-   <link rel="stylesheet" href="/css/about.css">
     <title>About</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/layout.js" defer></script>
 </head>
 <body>
-    <div id="navbarHtml"></div>
-    <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/011/260/238/non_2x/html5-css3-js-icon-set-web-development-logo-icon-set-of-html-css-and-javascript-programming-symbol-free-vector.jpg">
-    </div>
-    <div id="footer">
-        <h1>Web Systems Demo Prorject</h1>
-        <p>This project is used for demo and practice <span id="credit">Copyrigh &copy; Dr. Georges Bou Ghantous</span></p>
-    </div>
+    <div id="navbar-root"></div>
+    <main class="about-content">
+        <div class="about-header">
+            <img src="https://www.clipartmax.com/png/full/361-3613282_front-end-html-css-javascript-logo.png" alt="Web Systems Logo" class="logo">
+            <div>
+                <h1>Web Systems Demo Project</h1>
+                <p>An educational project demonstrating core web technologies: HTML structure, CSS styling, and JavaScript behaviour.</p>
+            </div>
+        </div>
+        <div class="tree-card">
+            <h2>Project Structure</h2>
+            <pre class="tree">
+websystems/
+├── index.html         <span class="tree-comment">— Home page with live clock</span>
+├── html/
+│   ├── navbar.html    <span class="tree-comment">— Shared navigation bar (loaded dynamically)</span>
+│   ├── footer.html    <span class="tree-comment">— Shared footer (loaded dynamically)</span>
+│   ├── tools.html     <span class="tree-comment">— CS tools page (factorial calculator)</span>
+│   └── about.html     <span class="tree-comment">— This page</span>
+├── css/
+│   ├── base.css       <span class="tree-comment">— Global reset and shared styles</span>
+│   ├── navbar.css     <span class="tree-comment">— Navigation bar styles</span>
+│   ├── footer.css     <span class="tree-comment">— Footer styles</span>
+│   ├── index.css      <span class="tree-comment">— Home page clock styles</span>
+│   ├── tools.css      <span class="tree-comment">— Tools page styles</span>
+│   └── about.css      <span class="tree-comment">— About page styles</span>
+└── js/
+    ├── layout.js      <span class="tree-comment">— Loads navbar and footer into all pages</span>
+    ├── index.js       <span class="tree-comment">— Live clock using Date and setTimeout</span>
+    └── tools.js       <span class="tree-comment">— Factorial function and calculator logic</span>
+            </pre>
+        </div>
+    </main>
+    <div id="footer-root"></div>
 </body>
 </html>

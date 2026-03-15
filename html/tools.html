@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/tools.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/tools.js" defer></script>
+</head>
+<body>
+    <div id="navbar-root"></div>
+    <main class="tools-page">
+        <div class="tools-grid">
+
+            <!-- Binary to Decimal -->
+            <div class="tool-card">
+                <h2>Binary → Decimal</h2>
+                <p class="tool-desc">Convert an 8-bit binary number to decimal.</p>
+                <div class="tool-body">
+                    <input type="text" id="bin-input" placeholder="e.g. 01001010" maxlength="8">
+                    <button class="btn" onclick="binToDec()">Convert</button>
+                </div>
+                <div class="tool-output" id="bin-output"></div>
+            </div>
+
+            <!-- Decimal to Binary -->
+            <div class="tool-card">
+                <h2>Decimal → Binary</h2>
+                <p class="tool-desc">Convert a decimal number (0–255) to 8-bit binary.</p>
+                <div class="tool-body">
+                    <input type="number" id="dec-input" placeholder="e.g. 74" min="0" max="255">
+                    <button class="btn" onclick="decToBin()">Convert</button>
+                </div>
+                <div class="tool-output" id="dec-output"></div>
+            </div>
+
+            <!-- Caesar Cipher -->
+            <div class="tool-card">
+                <h2>Caesar Cipher</h2>
+                <p class="tool-desc">
+                    Shifts each letter in the text by a fixed number of positions in the alphabet.<br>                    
+                </p>
+                <div class="tool-body">
+                    <label class="tool-label" for="caesar-input">Text</label>
+                    <input type="text" id="caesar-input" placeholder="e.g. Hello World">
+                    <label class="tool-label" for="caesar-shift">Shift (1–25)</label>
+                    <input type="number" id="caesar-shift" min="1" max="25" value="3">
+                    <div class="tool-actions">
+                        <button class="btn" onclick="caesarEncrypt()">Encrypt</button>
+                        <button class="btn btn-secondary" onclick="caesarDecrypt()">Decrypt</button>
+                    </div>
+                </div>
+                <div class="tool-output" id="caesar-output"></div>
+            </div>
+
+            <!-- SHA-256 Hash -->
+            <div class="tool-card">
+                <h2>SHA-256 Hash</h2>
+                <p class="tool-desc">Generate a SHA-256 digest using the browser WebCrypto API.</p>
+                <div class="tool-body">
+                    <input type="text" id="hash-input" placeholder="Enter any text">
+                    <div class="tool-actions">
+                        <button class="btn" onclick="sha256Hash()">Hash</button>
+                    </div>
+                </div>
+                <div class="tool-output hash-output" id="hash-output"></div>
+            </div>
+
+        </div>
+    </main>
+    <div id="footer-root"></div>
+</body>
+</html>
+</body>
+</html>

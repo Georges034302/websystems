@@ -1,0 +1,44 @@
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+.vscode
+vscode/
+*.code-workspace
+
+# Node / npm (if ever added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build / dist output
+dist/
+build/
+out/
+
+# Environment / secrets
+.env
+.env.*
+*.local
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

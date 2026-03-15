@@ -1,15 +1,34 @@
-.clock{
-    background-color: dimgray;
-    position: fixed;
-    font-size: 40px;
-    color: yellow;
+.page-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid green;
-    padding: 20px;
-    width: 20%;
-    height: 30%;
-    left: 35%;
-    top: 30%;
+    height: calc(100vh - 48px);
+}
+
+.clock-card {
+    background-color: #16213e;
+    border-radius: 16px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 0 40px rgba(0, 255, 100, 0.15);
+    border: 1px solid rgba(0, 255, 100, 0.2);
+}
+
+.clock-label {
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4ecca3;
+}
+
+.clock {
+    font-size: 72px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #4ecca3;
+    text-shadow: 0 0 20px rgba(78, 204, 163, 0.7);
+    letter-spacing: 6px;
 }

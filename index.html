@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/index.js"> </script>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-      $(function() {
-         $("#navbarHtml").load("/html/navbar.html");
-      });
-   </script>
     <title>Home</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/index.js" defer></script>
+    <script src="/js/layout.js" defer></script>
 </head>
-<body onload="startTime()">
-    <div id="navbarHtml"></div>
-    <div id="clock" class="clock"></div>
+<body>
+    <div id="navbar-root"></div>
+    <div class="page-content">
+        <div class="clock-card">
+            <span class="clock-label">Current Time</span>
+            <div id="clock" class="clock"></div>
+        </div>
+    </div>
+    <div id="footer-root"></div>
 </body>
 </html>

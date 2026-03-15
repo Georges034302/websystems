@@ -1,15 +1,82 @@
-#footer{
-    position: fixed;
-    text-align: left;
-    background-color: slategrey;
-    height: 100px;
-    bottom: 0px;
-    left: 0px;
-    padding: 50px;
-    width: 97%;
+.about-content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 120px;
 }
 
-#credit{
-    float: right;
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.about-header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.about-header p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.tree-card {
+    background-color: #fff;
+    border: 1px solid #c8e6da;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.tree-card h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0f3460;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4ecca3;
+    padding-bottom: 8px;
+}
+
+.tree {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #1a1a2e;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.tree-folder {
+    color: #0f3460;
+    font-weight: bold;
+}
+
+.tree-file {
+    color: #333;
+}
+
+.tree-file.root {
+    color: #0f3460;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tree-file.html { color: #e44d26; }
+.tree-file.css  { color: #264de4; }
+.tree-file.js   { color: #c47f00; }
+
+.tree-comment {
+    color: #888;
     font-style: italic;
+    font-family: sans-serif;
+    font-size: 13px;
 }
