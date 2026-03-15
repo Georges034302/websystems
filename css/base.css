@@ -10,3 +10,11 @@ body {
     font-family: sans-serif;
     color: #1a1a2e;
 }
+
+#navbar-root {
+    min-height: 48px;
+}
+
+#footer-root {
+    min-height: 100px;
+}
